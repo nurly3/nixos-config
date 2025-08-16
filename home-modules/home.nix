@@ -23,6 +23,9 @@
         # Fonts
         nerd-fonts.jetbrains-mono
         nerd-fonts.caskaydia-cove
+
+        # Daily
+        niri
     ];
 
     # Session Variables
