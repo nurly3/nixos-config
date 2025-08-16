@@ -6,10 +6,8 @@
 
 {
   imports = [ 
-    # Include the results of the hardware scan.
+      # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
-
-      ../../nix-modules/impurity.nix
 
       # Packages
       ../../nix-modules/packages.nix

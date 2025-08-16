@@ -28,19 +28,6 @@
         ];
       };
 
-      # Impure system, inherits everything from main
-      nixosConfigurations."main-live" = self.nixosConfigurations.main.extendModules {
-
-        specialArgs = { inherit inputs username system home-manager; };
-        modules = [
-          {
-            imports = [ inputs.impurity.nixosModules.impurity ];
-            impurity.enable = true;
-            impurity.configRoot = self;
-          }
-        ];
-      };
-
       homeConfigurations."${username}" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [ ./home-modules/home.nix ];
