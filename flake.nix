@@ -30,6 +30,8 @@
 
       # Impure system, inherits everything from main
       nixosConfigurations."main-live" = self.nixosConfigurations.main.extendModules {
+
+        specialArgs = { inherit inputs username system; };
         modules = [
           {
             imports = [ inputs.impurity.nixosModules.impurity ];
