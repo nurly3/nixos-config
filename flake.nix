@@ -32,7 +32,7 @@
       nixosConfigurations."main-live" = self.nixosConfigurations.main.extendModules {
         modules = [
           {
-            imports = [ impurity.nixosModules.impurity ];
+            imports = [ inputs.impurity.nixosModules.impurity ];
             impurity.enable = true;
             impurity.configRoot = self;
           }
