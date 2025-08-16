@@ -1,7 +1,7 @@
-{ config, pkgs, username, inputs, impurity ? null, ... }:
+{ config, pkgs, username, inputs, impurity ? null, home-manager, ... }:
 
 {
-    home-manager.users.${username} = {
+  home-manager.users.${username} = {
     xdg.configFile."foobar.conf".source = impurity.link ./foobar.conf;
   };
 }
