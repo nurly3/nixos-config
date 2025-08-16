@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, username, ... }:
+{ config, pkgs, username, inputs, ... }:
 
 {
   imports =
@@ -11,6 +11,10 @@
 
       # Packages
       ../../nix-modules/packages.nix
+
+      # End's dotfiles
+      inputs.illogical-impulse.homeManagerModules.default
+      ../../nix-modules/end-dots.nix
     ];
 
   # Bootloader.
