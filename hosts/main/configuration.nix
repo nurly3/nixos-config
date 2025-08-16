@@ -11,10 +11,6 @@
 
       # Packages
       ../../nix-modules/packages.nix
-
-      # End's dotfiles
-      inputs.illogical-impulse.homeManagerModules.default
-      ../../nix-modules/end-dots.nix
     ];
 
   # Bootloader.
