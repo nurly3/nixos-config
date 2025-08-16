@@ -5,13 +5,15 @@
 { config, pkgs, username, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [ 
+    # Include the results of the hardware scan.
       /etc/nixos/hardware-configuration.nix
+
+      ../../nix-modules/impurity.nix
 
       # Packages
       ../../nix-modules/packages.nix
-    ];
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
