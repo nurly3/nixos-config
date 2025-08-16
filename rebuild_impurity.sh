@@ -1,1 +1,2 @@
-IMPURITY_PATH=$(pwd) sudo --preserve-env=IMPURITY_PATH nixos-rebuild switch --flake --impure .#main-live
+export IMPURITY_PATH=$(pwd)
+sudo -E nixos-rebuild switch --flake "$(pwd)#main-live" --impure
