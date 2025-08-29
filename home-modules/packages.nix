@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, system, ... }:
 
 {
     # Add system/user packages
@@ -18,5 +18,6 @@
 
         # Daily
         niri
+        inputs.zen-browser.packages."${system}".beta
     ];
 }
