@@ -17,5 +17,8 @@
         # Daily
         inputs.zen-browser.packages."${system}".beta
 	protonvpn-gui
+
+	# Daily tools
+	fuzzel
     ];
 }
