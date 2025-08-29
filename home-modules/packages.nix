@@ -20,6 +20,7 @@
 
 	# Daily tools
 	fuzzel
+	swaybg
 
 	# Deeper niri stuff
 	xwayland-satellite
