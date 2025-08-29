@@ -3,17 +3,14 @@
 {
   imports = [ 
       /etc/nixos/hardware-configuration.nix
-      ../../nix-modules/packages.nix
   ];
 
-  # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
   time.timeZone = "Europe/Berlin";
 
-  # Select internationalisation properties.
   i18n.defaultLocale = "en_US";
 
   i18n.extraLocaleSettings = {
@@ -34,10 +31,8 @@
 
   services.xserver.xkb = {
     layout = "us";
-    variant = "dvorak";
   };
 
-  console.keyMap = "dvorak";
   services.printing.enable = true;
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
