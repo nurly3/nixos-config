@@ -8,14 +8,14 @@
     imports = [
       ./git.nix
       ./packages.nix
+      ./symlinks.nix
     ];
+
 
     # Session Variables
     home.sessionVariables = {
         EDITOR = "nvim";
     };
-
-    xdg.configFile."niri/config.kdl".source = ./niri/config.kdl;
 
     # Extend PATH cleanly
     home.sessionPath = [
