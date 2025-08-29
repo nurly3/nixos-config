@@ -17,5 +17,7 @@
         # Daily
         niri
         inputs.zen-browser.packages."${system}".beta
+	spotify
+	protonvpn-gui
     ];
 }
