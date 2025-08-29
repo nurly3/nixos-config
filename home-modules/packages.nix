@@ -1,13 +1,11 @@
 { pkgs, inputs, system, ... }:
 
 {
-    # Add system/user packages
     home.packages = with pkgs; [
         # Dev
+	kitty
         neovim        
         git
-        google-chrome
-        vscode
 
         # Notify
         libnotify
