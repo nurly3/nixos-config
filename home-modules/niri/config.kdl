@@ -585,4 +585,4 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
-spawn-at-startup "swaybg" "-i" "~/Pictures/wallpaper.webp"
+spawn-at-startup -- sh -c 'swaybg -i "$HOME/Pictures/wallpaper.webp"'
