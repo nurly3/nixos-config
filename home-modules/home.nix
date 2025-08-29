@@ -10,6 +10,7 @@
       ./packages.nix
       ./symlinks.nix
       ./spicetify.nix
+      inputs.spicetify-nix.homeManagerModules.default
     ];
 
 
