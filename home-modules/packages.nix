@@ -20,5 +20,8 @@
 
 	# Daily tools
 	fuzzel
+
+	# Deeper niri stuff
+	xwayland-satellite
     ];
 }
