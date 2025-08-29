@@ -9,7 +9,7 @@
       ./git.nix
       ./packages.nix
       ./symlinks.nix
-      ./spicetify.nix
+      ./spotify.nix
       inputs.spicetify-nix.homeManagerModules.default
     ];
 

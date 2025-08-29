@@ -23,5 +23,7 @@
 
 	# Deeper niri stuff
 	xwayland-satellite
+
+	google-chrome
     ];
 }
