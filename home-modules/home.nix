@@ -9,6 +9,7 @@
       ./git.nix
       ./packages.nix
       ./symlinks.nix
+      ./spicetify.nix
     ];
 
 
