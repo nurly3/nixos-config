@@ -15,7 +15,6 @@
         nerd-fonts.caskaydia-cove
 
         # Daily
-        niri
         inputs.zen-browser.packages."${system}".beta
 	protonvpn-gui
     ];
