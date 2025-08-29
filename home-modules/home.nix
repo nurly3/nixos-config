@@ -15,6 +15,8 @@
         EDITOR = "nvim";
     };
 
+    xdg.configFile."niri/config.kdl".source = ./niri/config.kdl;
+
     # Extend PATH cleanly
     home.sessionPath = [
         "$HOME/.cargo/bin"
