@@ -6,7 +6,7 @@
   "kitty/kitty.conf".source = ./kitty/kitty.conf;
   };
 
-  xdg.file = {
-  "~/Pictures/wallpaper.webp".source = ./niri/wallpaper.webp;
+  home.file = {
+  "Pictures/wallpaper.webp".source = ./niri/wallpaper.webp;
   };
 }
