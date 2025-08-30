@@ -9,7 +9,10 @@
 	enable = true;
       };
 
-      kitty.enable = true;
+      kitty = {
+	enable = true;
+	variant256Colors = true;
+      };
     };
   };
 }
