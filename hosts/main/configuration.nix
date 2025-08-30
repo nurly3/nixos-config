@@ -1,4 +1,4 @@
-{ inputs, username, pkgs, timezone, ... }:
+{ inputs, username, pkgs, timezone, hostname, ... }:
 
 {
   imports = [
