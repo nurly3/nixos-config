@@ -1,8 +1,8 @@
-{ ... }: 
+{ pkgs, ... }: 
 
 {
-	environment.systemPackages = with pkgs; [
-		git
-		home-manager
-	];
+  environment.systemPackages = with pkgs; [
+    git
+      home-manager
+  ];
 }
