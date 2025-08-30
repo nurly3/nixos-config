@@ -35,7 +35,6 @@
       modules = [
 	./hosts/main/configuration.nix
 	  inputs.niri-flake.nixosModules.niri
-	  inputs.stylix.nixosModules.stylix
       ];
     };
 
@@ -44,6 +43,7 @@
       modules = [ 
 	./home-manager/home.nix 
 	inputs.spicetify-nix.homeManagerModules.default
+	inputs.stylix.nixosModules.stylix
 	inputs.nixvim.homeModules.nixvim
       ];
       extraSpecialArgs = {

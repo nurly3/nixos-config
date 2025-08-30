@@ -3,7 +3,6 @@
 { 
   imports = [ 
     ./niri.nix 
-    ./stylix.nix
 
     # System
     ./packages.nix
