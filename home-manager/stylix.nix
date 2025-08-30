@@ -2,6 +2,7 @@
 
 {
   stylix = {
+    enable = true;
     image = ./niri/wallpaper.png;
     
     targets = {
@@ -10,6 +11,8 @@
       };
 
       fish.enable = true;
+
+      gtk.enable = true;
     };
   };
 }
