@@ -13,37 +13,37 @@
     };
 
     nixvim = {
-       url = "github:nix-community/nixvim";
-       inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
-      system = "x86_64-linux";
-      username = "nurlyx";
-      hostname = "nixos";
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
-    in {
-      nixosConfigurations.main = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs username system hostname; };
-        modules = [
-          ./hosts/main/configuration.nix
-        ];
-      };
+    system = "x86_64-linux";
+  username = "nurlyx";
+  hostname = "nixos";
+  pkgs = import nixpkgs {
+    inherit system;
+    config.allowUnfree = true;
+  };
+  in {
+    nixosConfigurations.main = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs username system hostname; };
+      modules = [
+	./hosts/main/configuration.nix
+      ];
+    };
 
-      homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ 
-	  ./home-manager/home.nix 
-	];
-        extraSpecialArgs = {
-          inherit inputs username system;
-        };
+    homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
+      inherit pkgs;
+      modules = [ 
+	./home-manager/home.nix 
+      ];
+      extraSpecialArgs = {
+	inherit inputs username system;
       };
     };
+  };
 }
 
