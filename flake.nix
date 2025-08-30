@@ -43,7 +43,7 @@
       modules = [ 
 	./home-manager/home.nix 
 	inputs.spicetify-nix.homeManagerModules.default
-	inputs.stylix.nixosModules.stylix
+	inputs.stylix.homeModules.stylix
 	inputs.nixvim.homeModules.nixvim
       ];
       extraSpecialArgs = {
