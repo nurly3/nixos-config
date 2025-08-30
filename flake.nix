@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    nvf.url = "github:notashelf/nvf";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -12,7 +13,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, nvf, ... }@inputs: 
     let 
       system = "x86_64-linux";
       username = "nurlyx";
@@ -36,4 +37,11 @@
         };
       };
     };
+
+    # Nvf
+    packages."${system}".default =
+       (nvf.lib.neovimConfiguration {
+         pkgs = nixpkgs.legacyPackages."${system}";
+	 modules = [ ./custom/nvf-config.nix ];
+        }).neovim;
 }
