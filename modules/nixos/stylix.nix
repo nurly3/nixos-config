@@ -8,7 +8,7 @@
       nixvim = {
 	enable = true;
 	plugin = "base16-nvim";
-	transparentBackground.main = true
+	transparentBackground.main = true;
       };
 
       swaylock = {
