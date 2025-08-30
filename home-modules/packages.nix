@@ -20,6 +20,7 @@
 
 	# Daily tools
 	fuzzel
+	brightnessctl
 	swaybg
 
 	# Deeper niri stuff
