@@ -7,11 +7,10 @@
       ../../modules/nixos/packages.nix
       ../../modules/nixos/locale.nix
       ../../modules/nixos/bootloader.nix
+      ../../modules/nixos/networking_hostname.nix
       inputs.niri-flake.nixosModules.niri
     ];
 
-  networking.hostName = "${hostname}"; # Define your hostname.
-  networking.networkmanager.enable = true;
   time.timeZone = "Europe/Berlin";
   # Enable the X11 windowing system.
   services.xserver.enable = true;
