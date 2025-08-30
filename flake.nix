@@ -23,13 +23,14 @@
     system = "x86_64-linux";
   username = "nurlyx";
   hostname = "nixos";
+  timezone = "Europe/Berlin";
   pkgs = import nixpkgs {
     inherit system;
     config.allowUnfree = true;
   };
   in {
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs username system hostname; };
+      specialArgs = { inherit inputs username system hostname timezone; };
       modules = [
 	./hosts/main/configuration.nix
       ];
