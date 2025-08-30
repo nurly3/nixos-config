@@ -8,6 +8,8 @@
       nixvim = {
 	enable = true;
       };
+
+      swaylock.enable = true;
     };
   };
 }
