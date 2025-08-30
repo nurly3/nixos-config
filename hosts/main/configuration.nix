@@ -87,9 +87,6 @@ nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Install firefox.
   programs.firefox.enable = true;
 
-  # Setup niri
-  programs.niri.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
