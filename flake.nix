@@ -6,7 +6,7 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     niri-flake.url = "github:sodiboo/niri-flake";
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:nix-community/stylix";
 
     home-manager = {
       url = "github:nix-community/home-manager";
