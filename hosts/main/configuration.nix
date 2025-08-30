@@ -1,15 +1,12 @@
 { config, pkgs, inputs, system, hostname, ... }:
 
-let 
-  modulePath = toString ../../modules/nixos;
-in
 {
   imports =
     [
       /etc/nixos/hardware-configuration.nix
-      ${modulePath}/packages.nix
-      ${modulePath}/locale.nix
-      ${modulePath}/bootloader.nix
+      ../../modules/nixos/packages.nix
+      ../../modules/nixos/locale.nix
+      ../../modules/nixos/bootloader.nix
       inputs.niri-flake.nixosModules.niri
     ];
 
