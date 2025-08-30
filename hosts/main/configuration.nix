@@ -1,16 +1,17 @@
 { config, pkgs, inputs, system, hostname, ... }:
 
+let 
+  modulePath = toString ../../modules/nixos;
+in
 {
   imports =
     [
       /etc/nixos/hardware-configuration.nix
-      ../../modules/nixos/packages.nix
-      ../../modules/nixos/locale.nix
+      ${modulePath}/packages.nix
+      ${modulePath}/locale.nix
+      ${modulePath}/bootloader.nix
       inputs.niri-flake.nixosModules.niri
     ];
-
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "${hostname}"; # Define your hostname.
   networking.networkmanager.enable = true;
