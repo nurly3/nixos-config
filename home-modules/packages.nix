@@ -23,6 +23,7 @@
 	fuzzel
 	fish
 	swaylock
+	starship
 	brightnessctl
 	swaybg
 
