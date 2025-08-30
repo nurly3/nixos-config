@@ -1,11 +1,12 @@
 { ... }:
 
 {
-programs.nixvim = {
+  programs.nixvim = {
     enable = true;
-    # put your nixvim config here
-    # e.g.
-    plugins.lualine.enable = true;
-    colorscheme = "gruvbox";
+    colorschemes.gruvbox.enable = true;
+
+    plugins = {
+      lualine.enable = true;
+    };
   };
 }
