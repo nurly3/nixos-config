@@ -12,8 +12,9 @@
       };
 
       fish.enable = true;
-
       gtk.enable = true;
+      swaylock.enable = true;
+      kitty.enable = true;
     };
   };
 }
