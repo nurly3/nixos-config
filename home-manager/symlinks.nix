@@ -9,6 +9,6 @@
   };
 
   home.file = {
-  "Pictures/wallpaper.png".source = ./niri/wallpaper.png;
+  "Pictures/wallpaper.jpg".source = ./niri/wallpaper.jpg;
   };
 }

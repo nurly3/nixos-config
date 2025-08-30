@@ -4,7 +4,7 @@
   stylix = {
     enable = true;
     polarity = "dark";
-    image = ./niri/wallpaper.png;
+    image = ./niri/wallpaper.jpg;
     
     targets = {
       nixvim = {
