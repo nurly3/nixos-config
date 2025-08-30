@@ -2,18 +2,13 @@
 
 {
   imports = [
-    /etc/nixos/hardware-configuration.nix
-      ../../modules/nixos/packages.nix
-      ../../modules/nixos/locale.nix
-      ../../modules/nixos/x11_gdm_gnome.nix
-      ../../modules/nixos/audio.nix
-      ../../modules/nixos/niri.nix
-      inputs.niri-flake.nixosModules.niri
+      ../../modules/nixos/default.nix
+      
   ];
 
   users.users.${username} = {
     isNormalUser = true;
-    description = "Nurlyx";
+    description = "User";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
 #  thunderbird

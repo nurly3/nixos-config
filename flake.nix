@@ -33,6 +33,7 @@
       specialArgs = { inherit inputs username system hostname timezone; };
       modules = [
 	./hosts/main/configuration.nix
+	inputs.niri-flake.nixosModules.niri
       ];
     };
 
