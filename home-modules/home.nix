@@ -10,6 +10,7 @@
       ./packages.nix
       ./symlinks.nix
       ./spotify.nix
+      ./nixvim.nix
       inputs.spicetify-nix.homeManagerModules.default
       inputs.nixvim.homeModules.nixvim
     ];
