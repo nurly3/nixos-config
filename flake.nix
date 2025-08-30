@@ -10,10 +10,14 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    inputs.nixvim = {
+       url = "github:nix-community/nixvim";
+        inputs.nixpkgs.follows = "nixpkgs";
+ 	};
   };
 
-  outputs = { self, nixpkgs, home-manager, nvf, ... }@inputs:
-    let
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
       system = "x86_64-linux";
       username = "nurlyx";
       pkgs = import nixpkgs {
@@ -25,7 +29,6 @@
         specialArgs = { inherit inputs username system; };
         modules = [
           ./hosts/main/configuration.nix
-	  nvf.nixosModules.default
         ];
       };
 

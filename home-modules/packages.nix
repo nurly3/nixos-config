@@ -15,14 +15,15 @@
         nerd-fonts.caskaydia-cove
 
         # Daily
+	neofetch
         inputs.zen-browser.packages."${system}".beta
 	protonvpn-gui
+	inputs.nixvim.homeModules.nixvim
 
 	# Daily tools
 	fuzzel
 	brightnessctl
 	swaybg
-	neofetch
 
 	# Deeper niri stuff
 	xwayland-satellite
