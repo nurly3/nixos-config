@@ -11,13 +11,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    inputs.nixvim = {
+    nixvim = {
        url = "github:nix-community/nixvim";
-        inputs.nixpkgs.follows = "nixpkgs";
- 	};
+       inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
+    let
       system = "x86_64-linux";
       username = "nurlyx";
       pkgs = import nixpkgs {
