@@ -19,6 +19,7 @@
 
 	# Daily tools
 	fuzzel
+	swaylock
 	brightnessctl
 	swaybg
 

@@ -568,6 +568,8 @@ binds {
 
     Mod+W { spawn "zen-beta"; }
 
+    Mod+Alt+L { spawn "swalock"; }
+
     Mod+F2 { spawn "brightnessctl" "s" "10%-"; }
     Mod+F3 { spawn "brightnessctl" "s" "10%+"; }
 
