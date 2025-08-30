@@ -4,7 +4,7 @@
   imports =
     [
       /etc/nixos/hardware-configuration.nix
-      inputs.niri-flake.nixosModule.niri
+      inputs.niri-flake.nixosModules.niri
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -77,8 +77,6 @@ home-manager
 nixpkgs.overlays = [ inputs.niri-flake.overlays.niri ];
   programs.niri.package = pkgs.niri-unstable;
   programs.niri.enable = true;
-  programs.niri.config = null;
-
 
   system.stateVersion = "25.05"; # Did you read the comment?
 
