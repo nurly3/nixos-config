@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, system, hostname, ... }:
+{ ... }:
 
 {
   imports = [
@@ -9,10 +9,10 @@
       ../../modules/nixos/networking_hostname.nix
       ../../modules/nixos/timezone.nix
       ../../modules/nixos/x11_gdm_gnome.nix
-      ../../modules/irrelevant_to_me.nix
-      ../../modules/audio.nix
-      ../../modules/users.nix
-      ../../modules/niri.nix
+      ../../modules/nixos/irrelevant_to_me.nix
+      ../../modules/nixos/audio.nix
+      ../../modules/nixos/users.nix
+      ../../modules/nixos/niri.nix
       inputs.niri-flake.nixosModules.niri
   ];
 }
