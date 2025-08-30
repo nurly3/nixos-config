@@ -11,10 +11,8 @@
       ./symlinks.nix
       ./spotify.nix
       ./nixvim/nixvim.nix
-      ./niri/niri.nix
       inputs.spicetify-nix.homeManagerModules.default
       inputs.nixvim.homeModules.nixvim
-      inputs.niri-flake.homeModules.niri
     ];
 
 
