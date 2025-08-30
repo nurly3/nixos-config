@@ -25,12 +25,4 @@ in
   theme = spicePkgs.themes.catppuccin;
   colorScheme = "mocha";
 };
-
-xdg.desktopEntries.spotify = {
-  name = "Spotify";
-  exec = "env NIXOS_OZONE_WL=1 spotify";
-  icon = "spotify";
-  categories = [ "Audio" "Music" "Player" "AudioVideo" ];
-};
-
 }
