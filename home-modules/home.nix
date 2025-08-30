@@ -11,6 +11,7 @@
       ./symlinks.nix
       ./spotify.nix
       inputs.spicetify-nix.homeManagerModules.default
+      inputs.nixvim.homeModules.nixvim
     ];
 
 

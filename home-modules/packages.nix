@@ -4,8 +4,6 @@
     home.packages = with pkgs; [
         # Dev
 	kitty
-        neovim        
-        git
 
         # Notify
         libnotify
@@ -18,7 +16,6 @@
 	neofetch
         inputs.zen-browser.packages."${system}".beta
 	protonvpn-gui
-	inputs.nixvim.homeModules.nixvim
 
 	# Daily tools
 	fuzzel
@@ -27,7 +24,5 @@
 
 	# Deeper niri stuff
 	xwayland-satellite
-
-	google-chrome
     ];
 }
