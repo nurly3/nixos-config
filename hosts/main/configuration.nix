@@ -1,16 +1,17 @@
-{ config, pkgs, inputs, system, ... }:
+{ config, pkgs, inputs, system, hostname, ... }:
 
 {
   imports =
     [
       /etc/nixos/hardware-configuration.nix
+      ../../modules/nixos/packages.nix
       inputs.niri-flake.nixosModules.niri
     ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "${hostname}"; # Define your hostname.
   networking.networkmanager.enable = true;
   time.timeZone = "Europe/Berlin";
   i18n.defaultLocale = "en_US.UTF-8";
