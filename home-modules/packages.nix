@@ -22,6 +22,7 @@
 	fuzzel
 	brightnessctl
 	swaybg
+	neofetch
 
 	# Deeper niri stuff
 	xwayland-satellite
