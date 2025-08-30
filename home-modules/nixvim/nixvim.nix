@@ -7,7 +7,7 @@
 	];
 
 	programs.nixvim = {
-		enabled = true;
+		enable = true;
 		defaultEditor = true;
 	};
 }
