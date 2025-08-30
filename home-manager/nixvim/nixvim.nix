@@ -2,7 +2,6 @@
 
 {
 	imports = [
-		./colorscheme.nix
 		./plugins.nix
 		./lsps.nix
 	];
