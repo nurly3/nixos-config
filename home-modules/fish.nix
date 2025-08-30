@@ -3,7 +3,6 @@
 {
   programs.fish = {
     enable = true;
-    prompt = "";
     
     shellAliases = {
       "hr" = "home-manager switch --flake .#nurlyx";
