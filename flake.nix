@@ -26,6 +26,7 @@
         specialArgs = { inherit inputs username system; };
         modules = [
           ./hosts/main/configuration.nix
+	  nvf.nixosModules.default
         ];
       };
 
