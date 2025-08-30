@@ -7,5 +7,5 @@
 
     # System
     ./packages.nix
-  ] 
+  ];
 }
