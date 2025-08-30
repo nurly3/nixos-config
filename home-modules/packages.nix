@@ -21,6 +21,7 @@
 
 	# Daily tools
 	fuzzel
+	fish
 	swaylock
 	brightnessctl
 	swaybg
