@@ -9,7 +9,7 @@
 	enable = true;
       };
 
-      swaylock.enable = true;
+      kitty.enable = true;
     };
   };
 }
