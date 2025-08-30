@@ -2,7 +2,7 @@
 
 {
   stylix = {
-    image = ./niri/wallpaper.webp;
+    image = ./niri/wallpaper.png;
     
     targets = {
       nixvim = {
