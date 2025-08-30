@@ -8,6 +8,7 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
 spawn-at-startup "sh" "-c" "swaybg -i ~/Pictures/wallpaper.webp"
+spawn-at-startup "sh" "-c" "brightnessctl -s 100%"
 input {
     keyboard {
         xkb {
@@ -566,6 +567,9 @@ binds {
     Alt+Print { screenshot-window; }
 
     Mod+W { spawn "zen-beta"; }
+
+    Mod+Alt+F2 { spawn "brightnessctl" "s" "10%-"; }
+    Mod+Alt+F3 { spawn "brightnessctl" "s" "10%+"; }
 
 
     // Applications such as remote-desktop clients and software KVM switches may
