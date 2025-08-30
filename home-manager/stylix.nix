@@ -9,10 +9,7 @@
 	enable = true;
       };
 
-      kitty = {
-	enable = true;
-	variant256Colors = true;
-      };
+      fish.enable = true;
     };
   };
 }
