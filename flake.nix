@@ -6,6 +6,7 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     niri-flake.url = "github:sodiboo/niri-flake";
+    stylix.url = "github:danth/stylix";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -33,7 +34,8 @@
       specialArgs = { inherit inputs username system hostname timezone; };
       modules = [
 	./hosts/main/configuration.nix
-	inputs.niri-flake.nixosModules.niri
+	  inputs.niri-flake.nixosModules.niri
+	  inputs.stylix.nixosModules.stylix
       ];
     };
 
@@ -41,6 +43,8 @@
       inherit pkgs;
       modules = [ 
 	./home-manager/home.nix 
+	inputs.spicetify-nix.homeManagerModules.default
+	inputs.nixvim.homeModules.nixvim
       ];
       extraSpecialArgs = {
 	inherit inputs username system;
