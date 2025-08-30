@@ -12,7 +12,7 @@
       ./spotify.nix
       ./nixvim/nixvim.nix
       inputs.spicetify-nix.homeManagerModules.default
-      inputs.nixvim.homeManagerModules.nixvim
+      inputs.nixvim.homeModules.nixvim
     ];
 
 
