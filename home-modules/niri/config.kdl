@@ -568,8 +568,8 @@ binds {
 
     Mod+W { spawn "zen-beta"; }
 
-    Mod+Alt+F2 { spawn "brightnessctl" "s" "10%-"; }
-    Mod+Alt+F3 { spawn "brightnessctl" "s" "10%+"; }
+    Mod+F2 { spawn "brightnessctl" "s" "10%-"; }
+    Mod+F3 { spawn "brightnessctl" "s" "10%+"; }
 
 
     // Applications such as remote-desktop clients and software KVM switches may
