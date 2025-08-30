@@ -3,6 +3,7 @@
 {
   stylix = {
     enable = true;
+    polarity = "dark";
     image = ./niri/wallpaper.png;
     
     targets = {
