@@ -21,7 +21,7 @@
     description = "User";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ ];
-  }
+  };
 
   i18n.defaultLocale = "en_US.UTF-8";
 
