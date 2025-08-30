@@ -11,6 +11,7 @@
       ./symlinks.nix
       ./spotify.nix
       ./nixvim/nixvim.nix
+      ./fish.nix
       inputs.spicetify-nix.homeManagerModules.default
       inputs.nixvim.homeModules.nixvim
     ];
@@ -19,6 +20,7 @@
     # Session Variables
     home.sessionVariables = {
         EDITOR = "nvim";
+	SHELL = "fish";
     };
 
     # Extend PATH cleanly
