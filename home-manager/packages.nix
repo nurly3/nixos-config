@@ -27,8 +27,8 @@
             fish
             starship
             clang
+            swww
             brightnessctl
-            swaybg
 
 # Deeper stuff
             xwayland-satellite
