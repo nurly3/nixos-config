@@ -24,6 +24,7 @@
 # Daily tools
             fuzzel
             swaylock
+            killall
             swaynotificationcenter
             fish
             starship

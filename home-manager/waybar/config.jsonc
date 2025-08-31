@@ -1,5 +1,5 @@
 {
-  "layer": "top",
+  "layer": "bottom",
   "modules-left": ["niri/workspaces"],
   "modules-center": ["clock"],
   "modules-right": ["tray"],
