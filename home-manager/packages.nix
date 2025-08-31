@@ -40,6 +40,7 @@
 
 # Language server
             gopls
+            nixd
             pyright
             rust-analyzer
             ];
