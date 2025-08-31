@@ -23,9 +23,8 @@
 
 # Daily tools
             fuzzel
-            fish
-            pyright
             swaylock
+            fish
             starship
             clang
             brightnessctl
@@ -33,5 +32,9 @@
 
 # Deeper niri stuff
             xwayland-satellite
+
+# Language server
+            gopls
+            pyright
             ];
 }
