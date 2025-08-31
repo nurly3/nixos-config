@@ -22,8 +22,7 @@
 
 	# Daily tools
 	fuzzel
-	# fish
-	material-symbols
+	fish
 	swaylock
 	starship
 	brightnessctl

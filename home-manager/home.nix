@@ -12,7 +12,6 @@
       ./spotify.nix
       ./nixvim/nixvim.nix
       ./stylix.nix      
-      ./illogical-impulse.nix
     ];
 
 
