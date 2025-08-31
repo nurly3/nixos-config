@@ -30,7 +30,6 @@
       modules = [
         ./hosts/main/configuration.nix
         inputs.niri-flake.nixosModules.niri
-        inputs.matugen.nixosModules.default
       ];
     };
 
