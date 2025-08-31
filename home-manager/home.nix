@@ -10,8 +10,6 @@
       ./packages.nix
       ./symlinks.nix
       ./spotify.nix
-      ./nixvim/nixvim.nix
-      ./stylix.nix      
     ];
 
 

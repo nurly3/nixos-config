@@ -6,16 +6,10 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     niri-flake.url = "github:sodiboo/niri-flake";
-    stylix.url = "github:nix-community/stylix";
     illogical-impulse.url = "github:xBLACKICEx/end-4-dots-hyprland-nixos";
 
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nixvim = {
-      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -44,9 +38,6 @@
       modules = [ 
 	./home-manager/home.nix 
 	inputs.spicetify-nix.homeManagerModules.default
-	inputs.stylix.homeModules.stylix
-	inputs.nixvim.homeModules.nixvim
-	inputs.illogical-impulse.homeManagerModules.default
       ];
       extraSpecialArgs = {
 	inherit inputs username system;
