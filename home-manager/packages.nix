@@ -30,10 +30,11 @@
             brightnessctl
             swaybg
 
-# Deeper niri stuff
+# Deeper stuff
             xwayland-satellite
             cliphist
             wl-clipboard
+            inputs.matugen.packages.${system}.default
 
 # Language server
             gopls

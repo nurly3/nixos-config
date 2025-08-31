@@ -6,8 +6,7 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     niri-flake.url = "github:sodiboo/niri-flake";
-    illogical-impulse.url = "github:xBLACKICEx/end-4-dots-hyprland-nixos";
-    matugen.url = "github:/InioX/Matugen"
+    matugen.url = "github:/InioX/Matugen";
 
       home-manager = {
         url = "github:nix-community/home-manager";
@@ -30,7 +29,8 @@
       specialArgs = { inherit inputs username system hostname timezone; };
       modules = [
         ./hosts/main/configuration.nix
-          inputs.niri-flake.nixosModules.niri
+        inputs.niri-flake.nixosModules.niri
+        inputs.matugen.nixosModules.default
       ];
     };
 
