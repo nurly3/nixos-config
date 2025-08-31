@@ -18,3 +18,7 @@ output_path = '~/.config/gtk-4.0/gtk.css'
 [templates.fuzzel]
 input_path = '~/.config/matugen/templates/fuzzel-colors.conf'
 output_path = '~/.config/fuzzel/colors.ini'
+
+[templates.starship]
+input_path = '~/.config/matugen/templates/starship-colors.conf'
+output_path = '~/.config/starship.toml'
