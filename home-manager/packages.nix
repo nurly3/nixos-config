@@ -25,7 +25,7 @@
 # Daily tools
             fuzzel
             swaylock
-            swaync
+            swaynotificationcenter
             fish
             starship
             clang
