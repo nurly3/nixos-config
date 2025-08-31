@@ -4,6 +4,7 @@
     home.packages = with pkgs; [
 # Dev
         kitty
+        zellij
 
 # Notify
             libnotify
