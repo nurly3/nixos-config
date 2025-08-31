@@ -32,6 +32,8 @@
 
 # Deeper niri stuff
             xwayland-satellite
+            cliphist
+            wl-clipboard
 
 # Language server
             gopls
