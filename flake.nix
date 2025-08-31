@@ -7,11 +7,12 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     niri-flake.url = "github:sodiboo/niri-flake";
     illogical-impulse.url = "github:xBLACKICEx/end-4-dots-hyprland-nixos";
+    matugen.url = "github:/InioX/Matugen"
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+      home-manager = {
+        url = "github:nix-community/home-manager";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
@@ -28,19 +29,19 @@
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs username system hostname timezone; };
       modules = [
-	./hosts/main/configuration.nix
-	  inputs.niri-flake.nixosModules.niri
+        ./hosts/main/configuration.nix
+          inputs.niri-flake.nixosModules.niri
       ];
     };
 
     homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
       modules = [ 
-	./home-manager/home.nix 
-	inputs.spicetify-nix.homeManagerModules.default
+        ./home-manager/home.nix 
+        inputs.spicetify-nix.homeManagerModules.default
       ];
       extraSpecialArgs = {
-	inherit inputs username system;
+        inherit inputs username system;
       };
     };
   };
