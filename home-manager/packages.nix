@@ -25,6 +25,7 @@
 # Daily tools
             fuzzel
             swaylock
+            swaync
             fish
             starship
             clang
