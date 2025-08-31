@@ -19,7 +19,6 @@
             tree
             neovim
             inputs.zen-browser.packages."${system}".beta
-            htop
             protonvpn-gui
 
 # Daily tools
@@ -28,6 +27,7 @@
             swaynotificationcenter
             fish
             starship
+            btop
             clang
             waybar
             swww
