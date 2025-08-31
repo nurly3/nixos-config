@@ -28,6 +28,7 @@
             fish
             starship
             clang
+            waybar
             swww
             brightnessctl
 
