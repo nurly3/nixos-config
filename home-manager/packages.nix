@@ -39,5 +39,6 @@
 # Language server
             gopls
             pyright
+            rust-analyzer
             ];
 }
