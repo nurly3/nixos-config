@@ -7,7 +7,8 @@
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
-spawn-sh-at-startup "swww-daemon"
+spawn-at-startup "swww-daemon"
+spawn-at-startup "matugen image ~/Pictures/wallpaper.jpg"
 spawn-sh-at-startup "brightnessctl -s 100%"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
