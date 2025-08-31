@@ -16,6 +16,7 @@
 	neofetch
 	vesktop
 	tree
+neovim
         inputs.zen-browser.packages."${system}".beta
 	htop
 	protonvpn-gui
