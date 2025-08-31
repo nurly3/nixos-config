@@ -7,7 +7,7 @@
     "fish/config.fish".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/fish/config.fish;
     "starship.toml".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/starship/starship.toml;
     "nvim/".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/nvim;
-    "matugen/".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/matugen/;
+    "matugen/".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/matugen;
   };
 
   home.file = {
