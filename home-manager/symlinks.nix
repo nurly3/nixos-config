@@ -8,6 +8,7 @@
     "starship.toml".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/starship/starship.toml;
     "nvim/".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/nvim;
     "matugen/".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/matugen;
+    "fuzzel/fuzzel.ini".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/fuzzel/fuzzel.ini;
   };
 
   home.file = {
