@@ -7,6 +7,7 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     niri-flake.url = "github:sodiboo/niri-flake";
     stylix.url = "github:nix-community/stylix";
+    illogical-impulse.url = "github:xBLACKICEx/end-4-dots-hyprland-nixos";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -45,6 +46,7 @@
 	inputs.spicetify-nix.homeManagerModules.default
 	inputs.stylix.homeModules.stylix
 	inputs.nixvim.homeModules.nixvim
+	inputs.illogical-impulse.homeManagerModules.default
       ];
       extraSpecialArgs = {
 	inherit inputs username system;
