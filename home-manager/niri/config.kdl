@@ -579,7 +579,7 @@ binds {
     Mod+V { spawn-sh "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"; }
     Mod+Alt+V { spawn-sh "cliphist list | fuzzel --dmenu | cliphist delete"; }
 
-    Mod+Ctrl+Alt+R { spawn-sh "kill waybar;waybar"; }
+    Mod+Ctrl+Alt+R { spawn-sh "killall waybar;waybar"; }
 
     Mod+F2 { spawn "brightnessctl" "s" "10%-"; }
     Mod+F3 { spawn "brightnessctl" "s" "10%+"; }
