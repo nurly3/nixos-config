@@ -24,6 +24,7 @@
 # Daily tools
             fuzzel
             fish
+            pyright
             swaylock
             starship
             clang
