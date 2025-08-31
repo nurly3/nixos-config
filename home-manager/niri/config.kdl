@@ -11,8 +11,8 @@ spawn-sh-at-startup "swww-daemon"
 spawn-sh-at-startup "brightnessctl -s 100%"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
-// Waybar not ready yet
-// spawn-at-startup "waybar"
+spawn-at-startup "waybar"
+spawn-at-startup "swaync"
 
 input {
     keyboard {
