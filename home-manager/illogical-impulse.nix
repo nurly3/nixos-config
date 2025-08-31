@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   illogical-impulse = {
@@ -7,8 +7,8 @@
 
     hyprland = {
 # Use customized Hyprland build
-      package = hypr.hyprland;
-      xdgPortalPackage = hypr.xdg-desktop-portal-hyprland;
+      package = pkgs.hyprland;
+      xdgPortalPackage = pkgs.xdg-desktop-portal-hyprland;
 
 # Enable Wayland ozone
       ozoneWayland.enable = true;

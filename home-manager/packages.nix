@@ -22,7 +22,7 @@
 
 	# Daily tools
 	fuzzel
-	fish
+	# fish
 	swaylock
 	starship
 	brightnessctl
