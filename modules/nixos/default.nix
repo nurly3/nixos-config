@@ -3,7 +3,6 @@
 { 
   imports = [ 
     ./niri.nix 
-    ./qt.nix
 
     # System
     ./packages.nix
