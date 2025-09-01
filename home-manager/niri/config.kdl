@@ -573,6 +573,8 @@ binds {
 
     Mod+W { spawn "zen-beta"; }
 
+    Mod+Alt+W { spawn "~/.config/niri/scripts/wall-selector"; }
+
     Mod+Alt+L { spawn "swalock"; }
 
     Mod+V { spawn-sh "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"; }
