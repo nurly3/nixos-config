@@ -10,7 +10,7 @@ IFS=$'\n'
 
 # Recursively list jpg/png images and pipe to fuzzel with icons
 SELECTED_WALL=$(
-  find . -type f \( -iname "*.jpg" -o -iname "*.png" \) |
+  find . -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.webp"\) |
   sort |
   while read -r a; do
     # remove leading ./ for cleaner display
