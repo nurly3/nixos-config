@@ -10,8 +10,4 @@
     "fuzzel/fuzzel.ini".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/fuzzel/fuzzel.ini;
     "waybar/".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/waybar;
   };
-
-  home.file = {
-    "Pictures/wallpaper.jpg".source = ./niri/wallpaper.jpg;
-  };
 }

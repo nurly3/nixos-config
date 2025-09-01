@@ -22,7 +22,7 @@ SELECTED_WALL=$(
 
 # If not empty, run your backend
 if [ -n "$SELECTED_WALL" ]; then
-   ~/nixos-config/home-manager/niri/scripts/wall-selector-backend "$WALL_DIR/$SELECTED_WALL"
+   ~/.config/niri/scripts/wall-selector-backend "$WALL_DIR/$SELECTED_WALL"
 fi
 
 cd "$CWD" || exit 0
