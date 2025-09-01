@@ -8,6 +8,11 @@
     niri-flake.url = "github:sodiboo/niri-flake";
     matugen.url = "github:/InioX/Matugen";
 
+    linkfrg-dotfiles = {
+      url = "github:linkfrg/dotfiles";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
       home-manager = {
         url = "github:nix-community/home-manager";
         inputs.nixpkgs.follows = "nixpkgs";
@@ -38,6 +43,7 @@
       modules = [ 
         ./home-manager/home.nix 
         inputs.spicetify-nix.homeManagerModules.default
+        inputs.linkfrg-dotfiles.homeManagerModules.public
       ];
       extraSpecialArgs = {
         inherit inputs username system;
