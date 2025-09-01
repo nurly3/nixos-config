@@ -1,12 +1,22 @@
 {
-  "layer": "bottom",
-  "modules-left": ["niri/workspaces"],
+  "layer": "top",
+  "modules-left": ["custom/applauncher"],
   "modules-center": ["clock"],
-  "modules-right": ["tray"],
-  "sway/window": {
-    "max-length": 50
-  },
+  "modules-right": ["tray", "wireplumber"],
+  "height": 25,
+"wireplumber": {
+    "format": "{volume}%",
+    "format-muted": "",
+    "on-click": "helvum",
+    "max-volume": 150,
+    "scroll-step": 0.2
+},
   "clock": {
     "format-alt": "{:%a, %d. %b  %H:%M}"
+  },
+  "custom/applauncher": {
+    "tooltip": false,
+    "on-click": "fuzzel -a top-left --x-margin=10 --y-margin=10",
+    "format": " ",
   }
 }
