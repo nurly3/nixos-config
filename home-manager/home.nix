@@ -10,7 +10,6 @@
       ./packages.nix
       ./symlinks.nix
       ./spotify.nix
-      ./linkfrg.nix
     ];
 
 
