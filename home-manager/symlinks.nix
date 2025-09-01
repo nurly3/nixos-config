@@ -2,7 +2,7 @@
 
 {
   xdg.configFile = {
-    "niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/niri/config.kdl;
+    "niri/".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/niri;
     "kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/kitty/kitty.conf;
     "fish/config.fish".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/fish/config.fish;
     "nvim/".source = config.lib.file.mkOutOfStoreSymlink ~/nixos-config/home-manager/nvim;
