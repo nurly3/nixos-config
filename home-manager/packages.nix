@@ -27,6 +27,7 @@
             swaylock
             killall
             swaynotificationcenter
+            rofi
             fish
             starship
             btop
